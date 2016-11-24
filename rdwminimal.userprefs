@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CubeCollisions.cs">
+    <Files>
+      <File FileName="Assets\Scripts\CameraController.cs" Line="81" Column="3" />
+      <File FileName="Assets\Scripts\CameraController\KeyboardController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StartUp\LoadLevel.cs" Line="15" Column="12" />
+      <File FileName="Assets\Scripts\LoggingSystem\DataLogger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LoggingSystem\UserStudyData.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CubeCollisions.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Elevator\ElevatorScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraController\CurvatureRedirTracker.cs" Line="48" Column="5" />
+      <File FileName="Assets\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HMD\CameraHandler.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

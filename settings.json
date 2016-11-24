@@ -1,0 +1,45 @@
+﻿{
+  "display": 2,
+  "geometry": {
+    "realroom": {
+      "axalignedrect": {
+        "xmin": -6.6,
+        "xmax": 0.5,
+        "ymin": 0,
+        "ymax": 12.6
+      },
+      "walls": [
+        [
+          -0.35,
+          0
+        ],
+        [
+          -6.6,
+          0
+        ],
+        [
+          -6.6,
+          12.6
+        ],
+        [
+          -0.35,
+          12.6
+        ]
+      ]
+   } 
+  },
+  "screen": {
+    "width": 1920,
+    "height": 1080,
+    "fullscreen": false,
+    "vsync": 0
+  },
+  "redirection": {
+    "enabled": true
+  },
+  "oculus": {
+    "ipd": 0.0691,
+    "nativeTextureScale": 1,
+    "virtualTextureScale": 1
+  }
+}

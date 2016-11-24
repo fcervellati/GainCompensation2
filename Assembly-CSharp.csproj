@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{6F1630A6-9FE9-6911-3714-2D260017D58E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GameController.cs" />
+     <Compile Include="Assets\Levels\JSON\JSONObject.cs" />
+     <Compile Include="Assets\Levels\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\Levels\JSON\VectorTemplates.cs" />
+     <Compile Include="Assets\Levels\start\GlobalGameController.cs" />
+     <Compile Include="Assets\ResetTechnique\IResetService.cs" />
+     <Compile Include="Assets\ResetTechnique\ResetServiceHandler.cs" />
+     <Compile Include="Assets\ResetTechnique\ResetTechnique.cs" />
+     <Compile Include="Assets\ResetTechnique\ResetTechniqueGUI.cs" />
+     <Compile Include="Assets\ResetTechnique\ZmqReset.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CameraController\CameraSwitcher.cs" />
+     <Compile Include="Assets\Scripts\CameraController\ControllerHandler.cs" />
+     <Compile Include="Assets\Scripts\CameraController\CurvatureRedirTracker.cs" />
+     <Compile Include="Assets\Scripts\CameraController\ITracker.cs" />
+     <Compile Include="Assets\Scripts\CameraController\KeyboardController.cs" />
+     <Compile Include="Assets\Scripts\CameraController\ObjectTracker.cs" />
+     <Compile Include="Assets\Scripts\CameraController\RedirTracker.cs" />
+     <Compile Include="Assets\Scripts\CameraController\SwitchThroughControllers.cs" />
+     <Compile Include="Assets\Scripts\CameraController\SwitchThroughWallwarners.cs" />
+     <Compile Include="Assets\Scripts\CameraController\VrController.cs" />
+     <Compile Include="Assets\Scripts\CameraController\ZmqController.cs" />
+     <Compile Include="Assets\Scripts\CameraController\ZmqControllerUpdateLate.cs" />
+     <Compile Include="Assets\Scripts\CubeCollisions.cs" />
+     <Compile Include="Assets\Scripts\Elevator\ElevatorScript.cs" />
+     <Compile Include="Assets\Scripts\HMD\CameraHandler.cs" />
+     <Compile Include="Assets\Scripts\HMD\CameraSetup.cs" />
+     <Compile Include="Assets\Scripts\HMD\DefaultCamera.cs" />
+     <Compile Include="Assets\Scripts\HMD\IFollower.cs" />
+     <Compile Include="Assets\Scripts\HMD\MovementControllers\MovementController.cs" />
+     <Compile Include="Assets\Scripts\HMD\VrCamera.cs" />
+     <Compile Include="Assets\Scripts\HMD\VrCompensator.cs" />
+     <Compile Include="Assets\Scripts\Hardware\miVRlink.cs" />
+     <Compile Include="Assets\Scripts\Input\CommandManager.cs" />
+     <Compile Include="Assets\Scripts\Input\KeyActionPair.cs" />
+     <Compile Include="Assets\Scripts\Input\KeyboardInput.cs" />
+     <Compile Include="Assets\Scripts\LoggingSystem\AnswerData.cs" />
+     <Compile Include="Assets\Scripts\LoggingSystem\DataLogger.cs" />
+     <Compile Include="Assets\Scripts\LoggingSystem\GameObjectData.cs" />
+     <Compile Include="Assets\Scripts\LoggingSystem\UserStudyData.cs" />
+     <Compile Include="Assets\Scripts\MessageSystem\Line.cs" />
+     <Compile Include="Assets\Scripts\MessageSystem\Message.cs" />
+     <Compile Include="Assets\Scripts\Settings\Settings.cs" />
+     <Compile Include="Assets\Scripts\Settings\SettingsFile.cs" />
+     <Compile Include="Assets\Scripts\Settings\SettingsHandler.cs" />
+     <Compile Include="Assets\Scripts\StartUp\AssignTrackerTo.cs" />
+     <Compile Include="Assets\Scripts\StartUp\Controllers\KeyboardControllerStartUp.cs" />
+     <Compile Include="Assets\Scripts\StartUp\Controllers\StartUpControllers.cs" />
+     <Compile Include="Assets\Scripts\StartUp\Controllers\VrControllerStartUp.cs" />
+     <Compile Include="Assets\Scripts\StartUp\Controllers\ZmqControllerStartUp.cs" />
+     <Compile Include="Assets\Scripts\StartUp\EnableOnStartup.cs" />
+     <Compile Include="Assets\Scripts\StartUp\LoadAssetOnStartUp.cs" />
+     <Compile Include="Assets\Scripts\StartUp\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\StartUp\SpawnOnStartup.cs" />
+     <Compile Include="Assets\Scripts\StartUp\StartUpLoadSettings.cs" />
+     <Compile Include="Assets\Scripts\StartUp\StartUpRoutine.cs" />
+     <Compile Include="Assets\Scripts\StartUp\StartUpScript.cs" />
+     <Compile Include="Assets\Scripts\StartUp\SubStartUpRoutine.cs" />
+     <Compile Include="Assets\Scripts\UI\SettingsGuiHandler.cs" />
+     <Compile Include="Assets\Scripts\UNUSEDTextEditor.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\GetUserInfo.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\HMDStatistics.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\LinkSliderInputField.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\StaircaseSettings.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\StudySettings.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\StudySettingsManager.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\TargetController.cs" />
+     <Compile Include="Assets\Scripts\UserStudy\TransformationMatrix.cs" />
+     <Compile Include="Assets\Scripts\Utility\CoordinateTransformations.cs" />
+     <Compile Include="Assets\Scripts\Utility\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\Utility\InitChecker.cs" />
+     <Compile Include="Assets\Scripts\Utility\LimitFps.cs" />
+     <Compile Include="Assets\Scripts\Utility\Logger.cs" />
+     <Compile Include="Assets\Scripts\ZMQ\ZmqInterface.cs" />
+     <Compile Include="Assets\Scripts\ZMQ\ZmqOutnode.cs" />
+     <Compile Include="Assets\Scripts\ZMQ\ZmqOutputer.cs" />
+     <Compile Include="Assets\WallWarningSystem\Mesh\WallWarnerCreater.cs" />
+     <Compile Include="Assets\WallWarningSystem\Projector\WallWarnerProjector.cs" />
+     <Compile Include="Assets\WallWarningSystem\WallWarningController.cs" />
+     <None Include="Assets\WallWarningSystem\DistanceFadeShader.shader" />
+     <None Include="Assets\Shaders\CullOff.shader" />
+     <None Include="Assets\WallWarningSystem\DistanceFadeShaderLinear.shader" />
+     <None Include="Assets\WallWarningSystem\Projector\Projector.shader" />
+     <None Include="Assets\Graphic Stuff\Cabinets - AdventureForge\CabinetsAndShelvesReadme.txt" />
+     <None Include="Assets\WallWarningSystem\DistanceFadeShaderVertical.shader" />
+     <None Include="Assets\Scripts\UI\GUIshaderFont.shader" />
+     <None Include="Assets\Scripts\UI\GUIshader.shader" />
+     <None Include="Assets\Shaders\1_FlatColor.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="NetMQ">
+ <HintPath>C:/Users/Cerve/Documents/ETH/Project/rdwminimal/Assets/Plugins/NetMQ.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-net">
+ <HintPath>C:/Users/Cerve/Documents/ETH/Project/rdwminimal/Assets/Plugins/protobuf-net.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
